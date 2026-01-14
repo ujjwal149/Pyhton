@@ -4,4 +4,12 @@ def my_function():
 
 my_function()
 
-"""while"""
+"""Greeting Function"""
+
+def greeting (name):
+
+    print(f"Hello {name}")
+
+name = "Ujjwal"
+greeting(name)
+'''h'''
