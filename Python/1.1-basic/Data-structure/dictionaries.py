@@ -18,3 +18,27 @@ for i in student_score:
     print(i)
     print(student_score[i])
 
+
+
+#Nested list in dictionaries.
+# travel_log = {
+#     'French':['Paris','Lille','Dijon'],
+#     'Germany':['Stuttgart','Berlin'],
+# }
+# print(travel_log['French'])
+# print(travel_log['French'][1])
+
+#Nested list and dictionaries inside dictionaries
+
+travel_log = {
+    'French':{
+        'cities-visited':['Paris','Lille','Dijon'],
+        'Time-visited':3,
+    },
+    'Germany':{
+        'cities-visited':['Stuttgart','Berlin'],
+        'Time-visited':5
+    }
+}
+print(travel_log['French']['cities-visited'][2])
+print(travel_log['French']['Time-visited'])

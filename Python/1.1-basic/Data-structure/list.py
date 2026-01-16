@@ -17,3 +17,8 @@ vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 dirty_dozen = [fruits, vegetables]
 
 print(dirty_dozen[1][1])
+
+#Nested List
+nested_list = ['A','B',['C','D']]
+#print D
+print(nested_list[2][1])
