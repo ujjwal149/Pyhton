@@ -10,8 +10,8 @@ print(student_score)
 student_score['Harry']=30
 print(student_score)
 #we can remove all data from dictionaries
-# student_score = {}
-# print(student_score)
+student_score = {}
+print(student_score)
 
 #loop inside dictionaries
 for i in student_score:
@@ -21,12 +21,12 @@ for i in student_score:
 
 
 #Nested list in dictionaries.
-# travel_log = {
-#     'French':['Paris','Lille','Dijon'],
-#     'Germany':['Stuttgart','Berlin'],
-# }
-# print(travel_log['French'])
-# print(travel_log['French'][1])
+travel_log = {
+    'French':['Paris','Lille','Dijon'],
+    'Germany':['Stuttgart','Berlin'],
+}
+print(travel_log['French'])
+print(travel_log['French'][1])
 
 #Nested list and dictionaries inside dictionaries
 
