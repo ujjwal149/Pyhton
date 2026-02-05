@@ -17,21 +17,21 @@ def calculate_score(cards):
         cards.append(1)
     return sum(cards)
 
-def compare(user_score , computer_score):
-    if user_score == computer_score:
+def compare(u_score, c_score):
+    if u_score == c_score:
         return "Draw 🙄"
-    elif computer_score == 0:
+    elif c_score == 0:
         return "Lose,Opponent has BlackJack 😱"
-    elif user_score == 0:
+    elif u_score == 0:
         return "Win with a BlackJack 😎"
-    elif user_score > 21:
+    elif u_score > 21:
         return "You went over,You lose 😭"
-    elif computer_score > 21:
+    elif c_score > 21:
         return "computer went over You win 😁"
-    elif user_score > computer_score:
+    elif u_score > c_score:
         return "You win 😀"
     else:
-        return "You lose "
+        return "You lose 😤"
 
 
 
@@ -63,3 +63,7 @@ while not is_game_over:
 while computer_score != 0 and computer_score < 17 :
     computer_cards.append(deal_card())
     computer_score = calculate_score(computer_cards)
+
+print(f"Your final hand: {user_cards}, final score: {user_score}")
+print(f"Computer final hand: {computer_cards}, final score: {computer_score}")
+print(compare(user_score,computer_score))
